@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Dropdown</title>
+  </head>
+  <body>
+    <div class="dropdown" data-placeholder="Select an item">
+      <button
+        type="button"
+        class="dropdown__toggle"
+        aria-haspopup="listbox"
+        aria-expanded="false"
+      >
+        <span class="dropdown__label">Select an item</span>
+        <svg class="dropdown__chevron" viewBox="0 0 20 20" aria-hidden="true">
+          <path
+            d="M5.5 7.5 10 12l4.5-4.5"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+
+      <ul class="dropdown__menu" role="listbox" tabindex="-1">
+        <li
+          class="dropdown__option"
+          role="option"
+          tabindex="-1"
+          data-value="apple"
+        >
+          Apple
+        </li>
+        <li
+          class="dropdown__option"
+          role="option"
+          tabindex="-1"
+          data-value="banana"
+        >
+          Banana
+        </li>
+        <li
+          class="dropdown__option"
+          role="option"
+          tabindex="-1"
+          data-value="cherry"
+        >
+          Cherry
+        </li>
+        <li
+          class="dropdown__option"
+          role="option"
+          tabindex="-1"
+          data-value="dragonfruit"
+        >
+          Dragonfruit
+        </li>
+      </ul>
+
+      <input class="dropdown__value" type="hidden" name="fruit" value="" />
+    </div>
+
+    <script src="./dropdown.js" defer></script>
+  </body>
+</html>
